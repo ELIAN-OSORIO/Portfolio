@@ -63,9 +63,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <link rel="stylesheet" id="widget-divider-css" href="https://elian-osorio.github.io/Portfolio/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=4.2.4" media="all">
 <link rel="stylesheet" id="widget-image-box-css" href="https://elian-osorio.github.io/Portfolio/wp-content/plugins/elementor/assets/css/widget-image-box.min.css?ver=4.2.4" media="all">
 <link rel="stylesheet" id="base-desktop-css" href="https://elian-osorio.github.io/Portfolio/wp-content/uploads/elementor/css/base-desktop.css?ver=6aac674febf60" media="all">
-<link rel="stylesheet" id="local-2-frontend-desktop-css" href="https://elian-osorio.github.io/Portfolio/wp-content/uploads/elementor/css/local-2-frontend-desktop.css?ver=6aac6765a99ad" media="all">
+<link rel="stylesheet" id="local-2-frontend-desktop-css" href="https://elian-osorio.github.io/Portfolio/wp-content/uploads/elementor/css/local-2-frontend-desktop.css?ver=6aad4c27abfaf" media="all">
 <link rel="stylesheet" id="base-mobile-css" href="https://elian-osorio.github.io/Portfolio/wp-content/uploads/elementor/css/base-mobile.css?ver=6aac674febf60" media="(max-width:767px)">
-<link rel="stylesheet" id="local-2-frontend-mobile-css" href="https://elian-osorio.github.io/Portfolio/wp-content/uploads/elementor/css/local-2-frontend-mobile.css?ver=6aac6765a99ad" media="(max-width:767px)">
+<link rel="stylesheet" id="local-2-frontend-mobile-css" href="https://elian-osorio.github.io/Portfolio/wp-content/uploads/elementor/css/local-2-frontend-mobile.css?ver=6aad4c27abfaf" media="(max-width:767px)">
 <link rel="stylesheet" id="elementor-gf-roboto-css" href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" media="all">
 <link rel="stylesheet" id="elementor-gf-robotoslab-css" href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" media="all">
 <link rel="stylesheet" id="elementor-gf-inter-css" href="https://fonts.googleapis.com/css?family=Inter:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&amp;display=swap" media="all">
@@ -106,6 +106,92 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 .elementor-widget-image-box:hover .elementor-image-box-img img {
     transform: scale(1.06);
+}
+/* Tecnologías */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+
+.project-tech span {
+    padding: 6px 11px;
+    background: #f5f7fa;
+    border: 1px solid #e3e7ec;
+    border-radius: 7px;
+    color: #4b5563;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.project-tech span:hover {
+    background: #ffffff;
+    border-color: #bfc6cf;
+    transform: translateY(-2px);
+}
+
+
+/* Botón */
+.project-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 17px;
+    background: #111827;
+    color: #ffffff !important;
+    border-radius: 8px;
+    text-decoration: none !important;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.project-button span {
+    font-size: 16px;
+    line-height: 1;
+    transition: transform 0.25s ease;
+}
+
+.project-button:hover {
+    background: #2563eb;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 16px rgba(37, 99, 235, 0.20);
+}
+
+.project-button:hover span {
+    transform: translate(2px, -2px);
+}
+/* Contenedor de botones */
+.project-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Botón Ver código */
+.project-code {
+    background: #ffffff;
+    color: #111827 !important;
+    border: 1px solid #d1d5db;
+    box-shadow: none;
+}
+
+.project-code:hover {
+    background: #111827;
+    color: #ffffff !important;
+    border-color: #111827;
+    box-shadow: 0 7px 16px rgba(0, 0, 0, 0.12);
+}
+
+.project-code span {
+    font-size: 14px;
 }
 </style>
 </head>
@@ -172,7 +258,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				<div class="elementor-element elementor-element-00c942a elementor-widget elementor-widget-button" data-id="00c942a" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#proyectos">
 						<span class="elementor-button-content-wrapper">
 						<span class="elementor-button-icon">
 				<svg aria-hidden="true" class="e-font-icon-svg e-fas-arrow-right" viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path></svg>			</span>
@@ -633,28 +719,88 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     		<div class="elementor-element elementor-element-bdc2f14 elementor-position-top elementor-position-top elementor-widget elementor-widget-image-box" data-id="bdc2f14" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://extfabrics.com/" tabindex="-1"><img fetchpriority="high" decoding="async" width="1448" height="1086" src="https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-17-2026-03_18_25-PM.png" class="attachment-full size-full wp-image-1140" alt="" srcset="https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-17-2026-03_18_25-PM.png 1448w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-17-2026-03_18_25-PM-300x225.png 300w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-17-2026-03_18_25-PM-1024x768.png 1024w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-17-2026-03_18_25-PM-768x576.png 768w" sizes="(max-width: 1448px) 100vw, 1448px"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://extfabrics.com/">EXT FABRICS</a></h3><p class="elementor-image-box-description">Sitio web desarrollado con WordPress y Elementor para la promoción de tejidos técnicos y soluciones textiles.
-</p></div></div>				</div>
+
+</p><div class="project-tech">
+    <span>WordPress</span>
+    <span>Elementor</span>
+    <span>CSS</span>
+</div>
+
+<a class="project-button" href="https://extfabrics.com/" target="_blank" rel="noopener">
+    Ver proyecto
+    <span>↗</span>
+</a></div></div>				</div>
 				</div>
 		
 </div>
 <div class="elementor-element elementor-element-92c88ff e-con e-atomic-element e-flexbox-base e-92c88ff-0bc3869 " data-id="92c88ff" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="92c88ff">
     		<div class="elementor-element elementor-element-a3a1d15 elementor-position-top elementor-position-top elementor-widget elementor-widget-image-box" data-id="a3a1d15" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
 				<div class="elementor-widget-container">
-					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://ameramark.com/" tabindex="-1"><img decoding="async" width="1448" height="1086" src="https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_57_33-AM.png" class="attachment-full size-full wp-image-855" alt="" srcset="https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_57_33-AM.png 1448w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_57_33-AM-300x225.png 300w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_57_33-AM-1024x768.png 1024w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_57_33-AM-768x576.png 768w" sizes="(max-width: 1448px) 100vw, 1448px"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://ameramark.com/">AMERAMARK</a></h3><p class="elementor-image-box-description">Optimización y mantenimiento de landing pages desarrolladas en WordPress y Divi para mejorar rendimiento y experiencia de usuario.</p></div></div>				</div>
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://ameramark.com/" tabindex="-1"><img decoding="async" width="1448" height="1086" src="https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_57_33-AM.png" class="attachment-full size-full wp-image-855" alt="" srcset="https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_57_33-AM.png 1448w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_57_33-AM-300x225.png 300w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_57_33-AM-1024x768.png 1024w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_57_33-AM-768x576.png 768w" sizes="(max-width: 1448px) 100vw, 1448px"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://ameramark.com/">AMERAMARK</a></h3><p class="elementor-image-box-description">Optimización y mantenimiento de landing pages desarrolladas en WordPress y Divi para mejorar rendimiento y experiencia de usuario.
+
+</p><div class="project-tech">
+    <span>WordPress</span>
+    <span>Divi</span>
+    <span>CSS</span>
+</div>
+
+<a class="project-button" href="https://ameramark.com/" target="_blank" rel="noopener">
+    Ver proyecto
+    <span>↗</span>
+</a></div></div>				</div>
 				</div>
 		
 </div>
 <div class="elementor-element elementor-element-08ce4ce e-con e-atomic-element e-flexbox-base e-08ce4ce-23ea5b5 " data-id="08ce4ce" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="08ce4ce">
     		<div class="elementor-element elementor-element-8add70f elementor-position-top elementor-position-top elementor-widget elementor-widget-image-box" data-id="8add70f" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
 				<div class="elementor-widget-container">
-					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://elian-osorio.github.io/introduccion-js/" tabindex="-1"><img decoding="async" width="1448" height="1086" src="https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_53_21-AM.png" class="attachment-full size-full wp-image-851" alt="" srcset="https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_53_21-AM.png 1448w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_53_21-AM-300x225.png 300w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_53_21-AM-1024x768.png 1024w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_53_21-AM-768x576.png 768w" sizes="(max-width: 1448px) 100vw, 1448px"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://elian-osorio.github.io/introduccion-js/">Renderizar Datos de un JSON</a></h3><p class="elementor-image-box-description">Aplicación web desarrollada con JavaScript para procesar y visualizar datos provenientes de archivos JSON.</p></div></div>				</div>
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://elian-osorio.github.io/introduccion-js/" tabindex="-1"><img decoding="async" width="1448" height="1086" src="https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_53_21-AM.png" class="attachment-full size-full wp-image-851" alt="" srcset="https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_53_21-AM.png 1448w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_53_21-AM-300x225.png 300w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_53_21-AM-1024x768.png 1024w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_53_21-AM-768x576.png 768w" sizes="(max-width: 1448px) 100vw, 1448px"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://elian-osorio.github.io/introduccion-js/">Renderizar Datos de un JSON</a></h3><p class="elementor-image-box-description">Aplicación web desarrollada con JavaScript para procesar y visualizar datos provenientes de archivos JSON.
+
+</p><div class="project-tech">
+    <span>JavaScript</span>
+    <span>HTML</span>
+    <span>CSS</span>
+</div>
+
+<div class="project-buttons">
+
+    <a class="project-button" href="https://elian-osorio.github.io/introduccion-js/" target="_blank" rel="noopener">
+        Ver proyecto
+        <span>↗</span>
+    </a>
+
+    <a class="project-button project-code" href="https://github.com/ELIAN-OSORIO/introduccion-js" target="_blank" rel="noopener">
+        Ver código
+        <span>&lt;/&gt;</span>
+    </a>
+
+</div></div></div>				</div>
 				</div>
 		
 </div>
 <div class="elementor-element elementor-element-423e622 e-con e-atomic-element e-flexbox-base e-423e622-1e36fb6 " data-id="423e622" data-element_type="e-flexbox" data-e-type="e-flexbox" data-interaction-id="423e622">
     		<div class="elementor-element elementor-element-48b1266 elementor-position-top elementor-position-top elementor-widget elementor-widget-image-box" data-id="48b1266" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
 				<div class="elementor-widget-container">
-					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://elian-osorio.github.io/Challenge-WEB/" tabindex="-1"><img loading="lazy" decoding="async" width="1448" height="1086" src="https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_46_18-AM.png" class="attachment-full size-full wp-image-846" alt="" srcset="https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_46_18-AM.png 1448w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_46_18-AM-300x225.png 300w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_46_18-AM-1024x768.png 1024w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_46_18-AM-768x576.png 768w" sizes="(max-width: 1448px) 100vw, 1448px"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://elian-osorio.github.io/Challenge-WEB/">Desafío Página Estática</a></h3><p class="elementor-image-box-description">Desarrollo de una página pixel perfect aplicando buenas prácticas de semántica HTML, estilos CSS y organización del contenido.</p></div></div>				</div>
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://elian-osorio.github.io/Challenge-WEB/" tabindex="-1"><img loading="lazy" decoding="async" width="1448" height="1086" src="https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_46_18-AM.png" class="attachment-full size-full wp-image-846" alt="" srcset="https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_46_18-AM.png 1448w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_46_18-AM-300x225.png 300w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_46_18-AM-1024x768.png 1024w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_46_18-AM-768x576.png 768w" sizes="(max-width: 1448px) 100vw, 1448px"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://elian-osorio.github.io/Challenge-WEB/">Desafío Página Estática</a></h3><p class="elementor-image-box-description">Desarrollo de una página pixel perfect aplicando buenas prácticas de semántica HTML, estilos CSS y organización del contenido.
+
+</p><div class="project-tech">
+    <span>HTML</span>
+    <span>CSS</span>
+</div>
+
+<div class="project-buttons">
+
+    <a class="project-button" href="https://elian-osorio.github.io/Challenge-WEB/" target="_blank" rel="noopener">
+        Ver proyecto
+        <span>↗</span>
+    </a>
+
+    <a class="project-button project-code" href="https://github.com/ELIAN-OSORIO/Challenge-WEB" target="_blank" rel="noopener">
+        Ver código
+        <span>&lt;/&gt;</span>
+    </a>
+
+</div></div></div>				</div>
 				</div>
 		
 </div>
@@ -662,7 +808,27 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     		<div class="elementor-element elementor-element-8de642b elementor-position-top elementor-position-top elementor-widget elementor-widget-image-box" data-id="8de642b" data-element_type="widget" data-e-type="widget" data-widget_type="image-box.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://elian-osorio.github.io/blooms-website/" tabindex="-1"><img loading="lazy" decoding="async" width="1448" height="1086" src="https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_44_57-AM.png" class="attachment-full size-full wp-image-845" alt="" srcset="https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_44_57-AM.png 1448w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_44_57-AM-300x225.png 300w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_44_57-AM-1024x768.png 1024w, https://elian-osorio.github.io/Portfolio/wp-content/uploads/2026/09/ChatGPT-Image-Sep-15-2026-10_44_57-AM-768x576.png 768w" sizes="(max-width: 1448px) 100vw, 1448px"></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://elian-osorio.github.io/blooms-website/">BLOOM WEBSITE</a></h3><p class="elementor-image-box-description">Desarrollo de un sitio web para una floreria, con catalogo de productos, categorias y precios, enfocado
-en simplificar la busqueda y compra de arreglos florales.</p></div></div>				</div>
+en simplificar la busqueda y compra de arreglos florales.
+
+</p><div class="project-tech">
+    <span>WordPress</span>
+    <span>Elementor</span>
+    <span>JavaScript</span>
+</div>
+
+<div class="project-buttons">
+
+    <a class="project-button" href="https://elian-osorio.github.io/blooms-website/" target="_blank" rel="noopener">
+        Ver proyecto
+        <span>↗</span>
+    </a>
+
+    <a class="project-button project-code" href="https://github.com/ELIAN-OSORIO/blooms-website" target="_blank" rel="noopener">
+        Ver código
+        <span>&lt;/&gt;</span>
+    </a>
+
+</div></div></div>				</div>
 				</div>
 		
 </div>
@@ -918,7 +1084,7 @@ jQuery.uiBackCompat = true;
 </script>
 <script id="jquery-ui-core-js" src="https://elian-osorio.github.io/Portfolio/wp-includes/js/jquery/ui/core.min.js?ver=1.14.2"></script>
 <script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.4","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_panel_promotions":true,"hello-theme-header-footer":true,"e_pro_free_trial_popup":true,"nested-elements":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"editor_mcp":true,"e_bc_migrations":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_variables_manager":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true},"urls":{"assets":"https:\/\/elian-osorio.github.io\/Portfolio\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/elian-osorio.github.io\/Portfolio\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/elian-osorio.github.io\/Portfolio\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"07dddf472c","atomicFormsSendForm":"4c4a965a24"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"hello_header_logo_type":"logo","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":2,"title":"JES%C3%9AS%20OSORIO","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnX":"Share on X","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"4.2.4","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_panel_promotions":true,"hello-theme-header-footer":true,"e_pro_free_trial_popup":true,"nested-elements":true,"e_atomic_elements":true,"atomic_widgets_should_enforce_capabilities":true,"editor_mcp":true,"e_bc_migrations":true,"e_classes":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"e_variables_manager":true,"e_opt_in_v4_page":true,"e_opt_in_v4":true,"e_components":true,"e_interactions":true,"e_widget_creation":true,"import-export-customization":true},"urls":{"assets":"https:\/\/elian-osorio.github.io\/Portfolio\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/elian-osorio.github.io\/Portfolio\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/elian-osorio.github.io\/Portfolio\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"0eee60fe07","atomicFormsSendForm":"e098b68d32"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"hello_header_logo_type":"logo","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":2,"title":"JES%C3%9AS%20OSORIO","excerpt":"","featuredImage":false}};
 //# sourceURL=elementor-frontend-js-before
 </script>
 <script id="elementor-frontend-js" src="https://elian-osorio.github.io/Portfolio/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=4.2.4"></script>

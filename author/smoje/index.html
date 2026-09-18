@@ -74,6 +74,92 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 .elementor-widget-image-box:hover .elementor-image-box-img img {
     transform: scale(1.06);
 }
+/* Tecnologías */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+
+.project-tech span {
+    padding: 6px 11px;
+    background: #f5f7fa;
+    border: 1px solid #e3e7ec;
+    border-radius: 7px;
+    color: #4b5563;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.project-tech span:hover {
+    background: #ffffff;
+    border-color: #bfc6cf;
+    transform: translateY(-2px);
+}
+
+
+/* Botón */
+.project-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 17px;
+    background: #111827;
+    color: #ffffff !important;
+    border-radius: 8px;
+    text-decoration: none !important;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.project-button span {
+    font-size: 16px;
+    line-height: 1;
+    transition: transform 0.25s ease;
+}
+
+.project-button:hover {
+    background: #2563eb;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 16px rgba(37, 99, 235, 0.20);
+}
+
+.project-button:hover span {
+    transform: translate(2px, -2px);
+}
+/* Contenedor de botones */
+.project-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Botón Ver código */
+.project-code {
+    background: #ffffff;
+    color: #111827 !important;
+    border: 1px solid #d1d5db;
+    box-shadow: none;
+}
+
+.project-code:hover {
+    background: #111827;
+    color: #ffffff !important;
+    border-color: #111827;
+    box-shadow: 0 7px 16px rgba(0, 0, 0, 0.12);
+}
+
+.project-code span {
+    font-size: 14px;
+}
 </style>
 </head>
 <body class="archive author author-smoje author-1 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-kit-8">
